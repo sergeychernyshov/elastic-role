@@ -1,4 +1,4 @@
-Kibana
+Elastic
 =========
 
 Simple download binaries from official website and install Elastic.

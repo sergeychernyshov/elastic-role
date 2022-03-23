@@ -1,7 +1,12 @@
 ---
-# handlers file for elastic-role
-  - name: restart Elasticsearch
-    become: true
-    service:
-      name: elasticsearch
-      state: restarted
+- name: restart Kibana systemd
+  become: true
+  service:
+    name: kibana
+    state: restarted
+
+- name: restart Kibana binary
+  become: true
+  command:
+    cmd: /etc/profile.d/kibana.sh
+    chdir: "{{ kibana_home }}"

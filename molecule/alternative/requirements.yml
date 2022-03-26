@@ -1,0 +1,13 @@
+---
+  - src: git@github.com:sergeychernyshov/kibana-role.git
+    scm: git
+    version: "1.2.0"
+    name: kibana
+  - src: git@github.com:sergeychernyshov/elastic-role.git
+    scm: git
+    version: "1.2.0"
+    name: elastic
+  - src: git@github.com:sergeychernyshov/filebeat-role.git
+    scm: git
+    version: "1.2.0"
+    name: filebeat

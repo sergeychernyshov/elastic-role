@@ -16,8 +16,8 @@ pipeline{
         }
         stage('run molecule test'){
             steps{
-                //sh 'molecule test' 
-                sh 'sleep 35'
+                sh 'molecule test' 
+                //sh 'sleep 35'
                 sh 'echo ===molecule test finish==='
                 cleanWs()
             }
